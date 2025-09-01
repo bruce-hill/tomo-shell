@@ -1,4 +1,4 @@
-use commands_v1.0
+use commands
 
 lang Shell
     convert(text:Text -> Shell)
