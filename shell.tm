@@ -2,7 +2,7 @@ use commands
 
 lang Shell
     convert(text:Text -> Shell)
-        return Shell.from_text("'" ++ text.replace($/'/, `'"'"'`) ++ "'")
+        return Shell.from_text("'" ++ text.replace("'", `'"'"'`) ++ "'")
 
     convert(texts:[Text] -> Shell)
         return Shell.from_text(" ".join([Shell(t).text for t in texts]))
